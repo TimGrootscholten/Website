@@ -4,7 +4,6 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
 //Styles
 import styled from "styled-components";
 import { About, Description, Image } from "../style/styles";
@@ -48,7 +47,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="home2" />
+        <img src="http://placeimg.com/500/750/tech" alt="home2" />
       </Image>
     </Services>
   );
@@ -83,5 +82,4 @@ const Card = styled.div`
     }
   }
 `;
-
 export default ServicesSection;
