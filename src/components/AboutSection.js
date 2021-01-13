@@ -1,28 +1,39 @@
 import React from "react";
 import { About, Description, Image, Hide } from "../style/styles";
+import Wave from "./Wave";
+//framer motion
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../animation";
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>Hallo,</h2>
+            <motion.h2 variants={titleAnim}>Hallo,</motion.h2>
           </Hide>
           <Hide>
-            <h2>mijn naam is</h2>
+            <motion.h2 variants={titleAnim}> mijn naam is</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               <span>Tim Grootscholten</span>
-            </h2>
+            </motion.h2>
           </Hide>
-        </div>
-        <p>&amp; Student Media en Applicatie Ontwikkelaar.</p>
-        <button>Contact opnemen</button>
+        </motion.div>
+        <motion.p variants={fade}>
+          &amp; Student Media en Applicatie Ontwikkelaar.
+        </motion.p>
+        <motion.button variants={fade}>Contact opnemen</motion.button>
       </Description>
       <Image>
-        <img src="https://placebeard.it/500x750" alt="home img" />
+        <motion.img
+          variants={photoAnim}
+          src="https://placebeard.it/500x750"
+          alt="home img"
+        />
       </Image>
+      <Wave />
     </About>
   );
 };

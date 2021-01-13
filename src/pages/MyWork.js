@@ -7,38 +7,53 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
-// import {
-//   sliderContainer,
-//   slider,
-//   pageAnimation,
-//   fade,
-//   photoAnim,
-//   lineAnim,
-// } from "../animation";
+import {
+  sliderContainer,
+  slider,
+  pageAnimation,
+  fade,
+  photoAnim,
+  lineAnim,
+} from "../animation";
 // import { useScroll } from "../components/useScroll";
 // import ScrollTop from "../components/ScrollTop";
 const MyWork = () => {
   return (
-    <Work>
+    <Work
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      style={{ background: "white" }}
+    >
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider} />
+        <Frame2 variants={slider} />
+        <Frame3 variants={slider} />
+        <Frame4 variants={slider} />
+      </motion.div>
+
       <Movie>
-        <h2>The athlete</h2>
+        <motion.h2 variants={fade}>The athlete</motion.h2>
         <Link to="/work/the-athlete">
-          <div className="line"></div>
-          <img src={athlete} alt="athlete" />
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <Hide>
+            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+          </Hide>
         </Link>
       </Movie>
       <Movie>
         <h2>The Racer</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+          <motion.img variants={photoAnim} src={theracer} alt="theracer" />
         </Link>
       </Movie>
       <Movie>
         <h2>Good Times</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+          <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
     </Work>
