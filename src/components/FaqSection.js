@@ -1,13 +1,21 @@
 import React from "react";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "./useScroll";
 //Styles
 import styled from "styled-components";
 import { About } from "../style/styles";
+import { scrollReveal } from "../animation";
 
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Faq>
+    <Faq
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <h2>
         <span>Ervaringen</span>
       </h2>
@@ -78,7 +86,7 @@ const Faq = styled(About)`
     width: 100%;
   }
   .question {
-    padding: 2rem 0rem;
+    padding: 3rem 0rem;
     cursor: pointer;
   }
   .answer {

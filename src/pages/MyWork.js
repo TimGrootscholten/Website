@@ -15,16 +15,16 @@ import {
   photoAnim,
   lineAnim,
 } from "../animation";
-// import { useScroll } from "../components/useScroll";
-// import ScrollTop from "../components/ScrollTop";
+import ScrollTop from "../components/ScrollTop";
+
 const MyWork = () => {
   return (
     <Work
+      style={{ background: "#fff" }}
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: "white" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider} />
@@ -32,7 +32,6 @@ const MyWork = () => {
         <Frame3 variants={slider} />
         <Frame4 variants={slider} />
       </motion.div>
-
       <Movie>
         <motion.h2 variants={fade}>The athlete</motion.h2>
         <Link to="/work/the-athlete">
@@ -56,6 +55,7 @@ const MyWork = () => {
           <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
