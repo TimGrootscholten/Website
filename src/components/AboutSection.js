@@ -17,7 +17,7 @@ const AboutSection = () => {
             </h2>
           </Hide>
         </div>
-        <p>&amp; ik ben student Media en Applicatie Ontwikkelaar.</p>
+        <p>&amp; Student Media en Applicatie Ontwikkelaar.</p>
         <button>Contact opnemen</button>
       </Description>
       <Image>

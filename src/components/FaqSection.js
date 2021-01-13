@@ -7,49 +7,47 @@ const FaqSection = () => {
   return (
     <Faq>
       <h2>
-        Any Question <span>FAQ</span>
+        <span>Ervaringen</span>
       </h2>
       <div className="question">
-        <h4>How do I start?</h4>
+        <h4>Javascript</h4>
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>https://github.com/TimGrootscholten/vier-op-een-rij</p>
+        </div>
+        <div className="faq-line"></div>
+      </div>
+      <div className="question">
+        <h4>React</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            delectus!
+            https://github.com/TimGrootscholten/Music-player <br />
+            https://github.com/TimGrootscholten/Website
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
       <div className="question">
-        <h4>Daily Schedule?</h4>
+        <h4>Symfony 4</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            delectus!
+            https://github.com/TimGrootscholten/HealthOne2.0 <br />
+            https://github.com/TimGrootscholten/Website
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
       <div className="question">
-        <h4>Diferrent Payment Methods?</h4>
+        <h4>Java</h4>
         <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            delectus!
+            Java was de eerste taal die ik leerde. We hadden met behulp van de
+            greenfood engine een platform game gemaakt. Daarna ben ik javascript
+            gaan leren.
           </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What Products do you offer?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            delectus!
-          </p>
+          <p>https://github.com/ROCMondriaanTIN/project-greenfoot-game-team</p>
         </div>
         <div className="faq-line"></div>
       </div>
