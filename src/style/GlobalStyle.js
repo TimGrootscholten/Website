@@ -12,7 +12,6 @@ html{
     @media (max-width: 1700px){
         font-size: 75%;
     }
-    
 }
 
 body{
@@ -22,7 +21,6 @@ body{
 }
 button{
     font-weight: bold;
-    font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
     border: 3px solid #23d997;
@@ -30,6 +28,7 @@ button{
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
     &:hover{
         background-color: #23d997;
         color: white;
@@ -45,6 +44,12 @@ h3{
 h4{
     font-weight: bold;
     font-size: 2rem;
+    
+}
+h5{
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 2rem;
     
 }
 a{

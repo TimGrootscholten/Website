@@ -1,6 +1,8 @@
 import React from "react";
 import { useScroll } from "./useScroll";
 // import icons/img
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUsers, faGraduationcap } from "@fortawesome/free-solid-svg-icons";
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
@@ -21,36 +23,33 @@ const InfoSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services.
+          <span>EIGENSCHAPPEN</span>
         </h2>
         <Cards>
           <Card>
             <div className="icon">
               <img src={clock} alt="clock" />
+              {/* <FontAwesomeIcon size="2x" icon={faUsers} /> */}
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm" />
-              <h3>Diaphragm</h3>
+              <h3>Nieuwsgierig</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="money" />
-              <h3>Affordable</h3>
+              <h3>Leergierig </h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
         </Cards>
       </Description>
