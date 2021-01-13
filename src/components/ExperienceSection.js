@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { About } from "../style/styles";
 import { scrollReveal } from "../animation";
 
-const FaqSection = () => {
+const ExperienceSection = () => {
   const [element, controls] = useScroll();
   return (
     <Faq
@@ -97,4 +97,4 @@ const Faq = styled(About)`
   }
 `;
 
-export default FaqSection;
+export default ExperienceSection;

@@ -32,7 +32,7 @@ const MyWork = () => {
         <Frame3 variants={slider} />
         <Frame4 variants={slider} />
       </motion.div>
-      <Movie>
+      <Project>
         <motion.h2 variants={fade}>The athlete</motion.h2>
         <Link to="/work/the-athlete">
           <motion.div variants={lineAnim} className="line"></motion.div>
@@ -40,21 +40,21 @@ const MyWork = () => {
             <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
         </Link>
-      </Movie>
-      <Movie>
+      </Project>
+      <Project>
         <h2>The Racer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
           <motion.img variants={photoAnim} src={theracer} alt="theracer" />
         </Link>
-      </Movie>
-      <Movie>
+      </Project>
+      <Project>
         <h2>Good Times</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
         </Link>
-      </Movie>
+      </Project>
       <ScrollTop />
     </Work>
   );
@@ -72,7 +72,7 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-const Movie = styled(motion.div)`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
 
   .line {

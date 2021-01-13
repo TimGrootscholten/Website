@@ -10,10 +10,10 @@ import styled from "styled-components";
 import { About, Description, Image } from "../style/styles";
 import { scrollReveal } from "../animation";
 
-const ServicesSection = () => {
+const InfoSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Services
+    <Info
       variants={scrollReveal}
       animate={controls}
       initial="hidden"
@@ -57,11 +57,11 @@ const ServicesSection = () => {
       <Image>
         <img src="http://placeimg.com/500/750/tech" alt="home2" />
       </Image>
-    </Services>
+    </Info>
   );
 };
 
-const Services = styled(About)`
+const Info = styled(About)`
   h2 {
     padding-bottom: 5rem;
   }
@@ -90,4 +90,4 @@ const Card = styled.div`
     }
   }
 `;
-export default ServicesSection;
+export default InfoSection;

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { ProjectState } from "../ProjectState";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 const WorkDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [works] = useState(MovieState);
+  const [works] = useState(ProjectState);
   const [work, setWork] = useState(null);
 
   //useEffects
@@ -31,15 +31,15 @@ const WorkDetail = () => {
             <h2>{work.title}</h2>
             <img src={work.mainImg} alt={work.title} />
           </HeadLine>
-          <Awards>
+          <container>
             {work.awards.map((award) => (
-              <Award
+              <Info
                 title={award.title}
                 description={award.description}
                 key={award.title}
               />
             ))}
-          </Awards>
+          </container>
           <ImageDisplay>
             <img src={work.secondaryImg} alt={work.title} />
           </ImageDisplay>
@@ -50,13 +50,13 @@ const WorkDetail = () => {
 };
 
 //Award Component
-const Award = ({ title, description }) => {
+const Info = ({ title, description }) => {
   return (
-    <AwardStyle>
+    <InfoStyle>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </AwardStyle>
+    </InfoStyle>
   );
 };
 
@@ -79,7 +79,7 @@ const HeadLine = styled.div`
     object-fit: cover;
   }
 `;
-const Awards = styled.div`
+const container = styled.div`
   min-height: 80vh;
   display: flex;
   margin: 5rem 10rem;
@@ -90,7 +90,7 @@ const Awards = styled.div`
     margin: 2rem 2rem;
   }
 `;
-const AwardStyle = styled.div`
+const InfoStyle = styled.div`
   padding: 5rem;
   h3 {
     font-size: 2rem;

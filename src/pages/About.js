@@ -1,15 +1,15 @@
 import React from "react";
 //Page Components
 import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
+import InfoSection from "../components/InfoSection";
+import ExperienceSection from "../components/ExperienceSection";
 import ScrollTop from "../components/ScrollTop";
 
 //animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <motion.div
       exit="exit"
@@ -18,11 +18,11 @@ const AboutUs = () => {
       animate="show"
     >
       <AboutSection />
-      <ServicesSection />
-      <FaqSection />
+      <InfoSection />
+      <ExperienceSection />
       <ScrollTop />
     </motion.div>
   );
 };
 
-export default AboutUs;
+export default About;
