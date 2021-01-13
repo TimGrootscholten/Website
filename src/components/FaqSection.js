@@ -18,9 +18,32 @@ const FaqSection = () => {
         <div className="faq-line"></div>
       </div>
       <div className="question">
-        <h4>React</h4>
+        <h4>php</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
+          <p>https://github.com/TimGrootscholten/healthone</p>
+        </div>
+        <div className="faq-line"></div>
+      </div>
+      <div className="question">
+        <h4>Java</h4>
+        <div className="answer">
+          <p>
+            Java was de eerste taal die ik leerde. We hadden met behulp van de
+            greenfood engine een platform game gemaakt. Daarna ben ik javascript
+            gaan leren.
+          </p>
+          <p>https://github.com/ROCMondriaanTIN/project-greenfoot-game-team</p>
+        </div>
+        <div className="faq-line"></div>
+      </div>
+      <div className="question">
+        <h4>React</h4>
+        <div className="answer">
+          <p>
+            Ben sinds kort begonnen met React. Ik wilde een javascript famework
+            gebruiken om me websites in te maken.
+          </p>
           <p>
             https://github.com/TimGrootscholten/Music-player <br />
             https://github.com/TimGrootscholten/Website
@@ -36,18 +59,6 @@ const FaqSection = () => {
             https://github.com/TimGrootscholten/HealthOne2.0 <br />
             https://github.com/TimGrootscholten/Website
           </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Java</h4>
-        <div className="answer">
-          <p>
-            Java was de eerste taal die ik leerde. We hadden met behulp van de
-            greenfood engine een platform game gemaakt. Daarna ben ik javascript
-            gaan leren.
-          </p>
-          <p>https://github.com/ROCMondriaanTIN/project-greenfoot-game-team</p>
         </div>
         <div className="faq-line"></div>
       </div>
