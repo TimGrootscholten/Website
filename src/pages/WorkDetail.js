@@ -8,14 +8,13 @@ import { pageAnimation } from "../animation";
 const WorkDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [works, setWorks] = useState(MovieState);
+  const [works] = useState(MovieState);
   const [work, setWork] = useState(null);
 
   //useEffects
   useEffect(() => {
     const currentWork = works.filter((stateWork) => stateWork.url === url);
     setWork(currentWork[0]);
-    console.log(currentWork[0]);
   }, [works, url]);
 
   return (
