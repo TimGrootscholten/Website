@@ -7,11 +7,10 @@ import {
   faQuestionCircle,
   faBolt,
 } from "@fortawesome/free-solid-svg-icons";
-import bug from "../img/bug.jpg";
 import teamwork from "../img/teamwork.svg";
 //Styles
 import styled from "styled-components";
-import { About, Description, Image } from "../style/styles";
+import { About, Description } from "../style/styles";
 import { scrollReveal } from "../animation";
 
 const InfoSection = () => {
