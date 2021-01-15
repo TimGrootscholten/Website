@@ -108,8 +108,12 @@ const Project = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
+    width: 90%;
+    padding-left: 10%;
     object-fit: cover;
+    display: flex;
+    align-items: center;
   }
 `;
 const Hide = styled.div`
