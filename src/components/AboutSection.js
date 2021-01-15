@@ -2,7 +2,7 @@ import React from "react";
 import { About, Description, Image, Hide } from "../style/styles";
 import Wave from "./Wave";
 import { Link } from "react-router-dom";
-import ik from "../img/ik.jpg";
+import ik from "../img/ik.png";
 //framer motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
