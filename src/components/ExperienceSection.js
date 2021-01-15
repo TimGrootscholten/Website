@@ -24,75 +24,46 @@ const ExperienceSection = () => {
       <AnimateSharedLayout>
         <Toggle title="Javascript">
           <div className="answer">
-            <ProgressBar bgcolor={"#61dafb"} completed={70} />
+            <ProgressBar bgcolor={"#fbdc00"} completed={70} />
             <h5>Projects</h5>
             <Link to="/work/vier-op-een-rij">
               <Button>Vier op een rij</Button>
             </Link>
-            <p>https://github.com/TimGrootscholten/vier-op-een-rij</p>
           </div>
         </Toggle>
         <Toggle title="PHP">
           <div className="answer">
             <ProgressBar bgcolor={"#7377ad"} completed={35} />
-
-            <p>Ben begin dit jaar begonnen met php .</p>
             <Link to="/work/healthone">
               <Button>HealthOne</Button>
             </Link>
-
-            <p>https://github.com/TimGrootscholten/healthone</p>
           </div>
         </Toggle>
         <Toggle title="Java">
           <div className="answer">
-            <ProgressBar bgcolor={"#ea8c11"} completed={50} />
-
-            <p>
-              Java was de eerste taal die ik leerde. We hadden met behulp van de
-              greenfood engine een platform game gemaakt. Daarna ben ik
-              javascript gaan leren.
-            </p>
-            <Link to="/work/palatform-game">
+            <ProgressBar bgcolor={"#ea8c11"} completed={35} />
+            <Link to="/work/platform-game">
               <Button>Platform game</Button>
             </Link>
-            <p>
-              https://github.com/ROCMondriaanTIN/project-greenfoot-game-team
-            </p>
           </div>
         </Toggle>
         <Toggle title="React">
           <div className="answer">
-            <ProgressBar bgcolor={"#61dafb"} completed={40} />
-
-            <p>
-              Ben sinds kort begonnen met React. Ik wilde een javascript
-              famework gebruiken om me websites in te maken.
-            </p>
+            <ProgressBar bgcolor={"#61dafb"} completed={50} />
             <Link to="/work/music-player">
               <Button>Music player</Button>
             </Link>
             <Link to="/work/website">
               <Button>Website</Button>
             </Link>
-            <p>
-              https://github.com/TimGrootscholten/Music-player <br />
-              https://github.com/TimGrootscholten/Website
-            </p>
           </div>
         </Toggle>
         <Toggle title="Symfony 4">
           <div className="answer">
             <ProgressBar bgcolor={"#000000"} completed={40} />
-
-            <p>
-              Symfony heb ik nu op school ben nu bezig om mijn php project over
-              te zetten naar symfony.
-            </p>
             <Link to="/work/healthone20">
               <Button>HealthOne2.0</Button>
             </Link>
-            <p>https://github.com/TimGrootscholten/HealthOne2.0</p>
           </div>
         </Toggle>
       </AnimateSharedLayout>

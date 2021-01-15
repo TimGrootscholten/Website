@@ -2,6 +2,7 @@ import React from "react";
 import { About, Description, Image, Hide } from "../style/styles";
 import Wave from "./Wave";
 import { Link } from "react-router-dom";
+import ik from "../img/ik.jpg";
 //framer motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
@@ -32,7 +33,8 @@ const AboutSection = () => {
       <Image>
         <motion.img
           variants={photoAnim}
-          src="https://placebeard.it/500x750"
+          // src="https://placebeard.it/500x750"
+          src={ik}
           alt="home img"
         />
       </Image>

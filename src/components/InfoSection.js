@@ -1,11 +1,13 @@
 import React from "react";
 import { useScroll } from "./useScroll";
 // import icons/img
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUsers, faGraduationcap } from "@fortawesome/free-solid-svg-icons";
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGraduationCap,
+  faQuestionCircle,
+  faBolt,
+} from "@fortawesome/free-solid-svg-icons";
+import bug from "../img/bug.jpg";
 import teamwork from "../img/teamwork.svg";
 //Styles
 import styled from "styled-components";
@@ -28,9 +30,8 @@ const InfoSection = () => {
         <Cards>
           <Card>
             <div className="icon">
-              <img src={clock} alt="clock" />
-              {/* <FontAwesomeIcon size="2x" icon={faUsers} /> */}
-              <h3>Efficient</h3>
+              <FontAwesomeIcon size="3x" icon={faBolt} />
+              <h3>Enthousiast</h3>
             </div>
           </Card>
           <Card>
@@ -41,21 +42,41 @@ const InfoSection = () => {
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="diaphragm" />
+              <FontAwesomeIcon size="3x" icon={faQuestionCircle} />
               <h3>Nieuwsgierig</h3>
             </div>
           </Card>
           <Card>
             <div className="icon">
-              <img src={money} alt="money" />
+              <FontAwesomeIcon size="3x" icon={faGraduationCap} />
               <h3>Leergierig </h3>
             </div>
           </Card>
         </Cards>
       </Description>
-      <Image>
-        <img src="http://placeimg.com/500/750/tech" alt="home2" />
-      </Image>
+      <Description>
+        <Details>
+          <h2>
+            <span>PERSOONLIJKE DETAILS</span>
+          </h2>
+          <div className="text">
+            Naam: Grootscholten <br />
+            Roepnaam: Tim <br />
+            Geboorteplaats: Monster <br />
+            Geboortedatum: 29-03-2003 <br />
+            Nationaliteit: NL <br />
+            Telefoonnummer +31 (0)6 46 90 27 56 <br /> <br />
+            Doopnamen: René Cornelis <br />
+            Adres: Het eiland 26, 2681JX <br />
+            Woonplaats: Monster <br />
+            Geslacht: man <br />
+            opleiding: Media en Applicatie Ontwikkelaar <br />
+            Email: timgrootscholtentim@gmail.com
+          </div>
+        </Details>
+
+        {/* <Img src={bug} alt="home2" /> */}
+      </Description>
     </Info>
   );
 };
@@ -63,12 +84,29 @@ const InfoSection = () => {
 const Info = styled(About)`
   h2 {
     padding-bottom: 5rem;
+    @media (max-width: 1300px) {
+      font-size: 3rem;
+    }
   }
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
 `;
+const Details = styled.div`
+  .text {
+    color: #ccc;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+  @media (max-width: 1300px) {
+    justify-content: center;
+    h2 {
+      margin-top: 10rem;
+    }
+  }
+`;
+
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -78,9 +116,14 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
+  padding: 2rem 1rem;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
   .icon {
     display: flex;
     align-items: center;
+    color: #23d997;
     h3 {
       margin-left: 1rem;
       background: white;

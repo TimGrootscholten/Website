@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import vierOpEenRij from "../img/vierOpEenRij.PNG";
+import healthone from "../img/healthone2.PNG";
+import healthone20 from "../img/healthone20.PNG";
+import MusicPlayer from "../img/MusicPlayer.PNG";
+import platform from "../img/platform.PNG";
+import website from "../img/website2.PNG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -33,28 +36,51 @@ const MyWork = () => {
         <Frame4 variants={slider} />
       </motion.div>
       <Project>
-        <motion.h2 variants={fade}>The athlete</motion.h2>
-        <Link to="/work/the-athlete">
+        <motion.h2 variants={fade}>Vier op een rij</motion.h2>
+        <Link to="/work/vier-op-een-rij">
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img variants={photoAnim} src={vierOpEenRij} alt="athlete" />
           </Hide>
         </Link>
       </Project>
       <Project>
-        <h2>The Racer</h2>
+        <h2>Website</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <motion.img variants={photoAnim} src={theracer} alt="theracer" />
+        <Link to="/work/website">
+          <motion.img variants={photoAnim} src={website} alt="goodtimes" />
         </Link>
       </Project>
       <Project>
-        <h2>Good Times</h2>
+        <h2>Music player</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <motion.img variants={photoAnim} src={goodtimes} alt="goodtimes" />
+        <Link to="/work/music-player">
+          <motion.img variants={photoAnim} src={MusicPlayer} alt="goodtimes" />
         </Link>
       </Project>
+      <Project>
+        <h2>Platform game</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/platform-game">
+          <motion.img variants={photoAnim} src={platform} alt="goodtimes" />
+        </Link>
+      </Project>
+
+      <Project>
+        <h2>HealthOne</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/healthone">
+          <motion.img variants={photoAnim} src={healthone} alt="theracer" />
+        </Link>
+      </Project>
+      <Project>
+        <h2>Healthone 2.0</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/healthone20">
+          <motion.img variants={photoAnim} src={healthone20} alt="goodtimes" />
+        </Link>
+      </Project>
+
       <ScrollTop />
     </Work>
   );
