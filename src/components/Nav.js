@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import ik from "../img/ik.png";
 
 const Nav = () => {
   const { pathname } = useLocation();
@@ -38,6 +39,11 @@ const Nav = () => {
             animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
           />
         </li>
+        <li>
+          <a href={ik} download>
+            Cv als PDF
+          </a>
+        </li>
       </ul>
     </StyledNav>
   );
@@ -64,6 +70,7 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-size: 1.5rem;
+    font-family: "Lobster", cursive;
     font-weight: lighter;
   }
   li {
