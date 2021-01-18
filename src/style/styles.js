@@ -33,9 +33,13 @@ export const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 100%;
-    height: 80vh;
+    width: 60%;
+    height: 40vh;
     object-fit: cover;
+    @media (max-width: 1300px) {
+      width: 90%;
+      height: 90vh;
+    }
   }
 `;
 
