@@ -65,7 +65,6 @@ const InfoSection = () => {
             Geboortedatum: 29-03-2003 <br />
             Nationaliteit: NL <br />
             Telefoonnummer +31 (0)6 46 90 27 56 <br /> <br />
-            Doopnamen: René Cornelis <br />
             Adres: Het eiland 26, 2681JX <br />
             Woonplaats: Monster <br />
             Geslacht: man <br />

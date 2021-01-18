@@ -32,13 +32,11 @@ export const Image = styled.div`
   z-index: 2;
   flex: 1;
   overflow: hidden;
-  img {
-    width: 60%;
-    height: 40vh;
-    object-fit: cover;
-    @media (max-width: 1300px) {
-      width: 90%;
-      height: 90vh;
+  @media (min-width: 650) {
+    img {
+      width: 60%;
+      height: 40vh;
+      object-fit: cover;
     }
   }
 `;
