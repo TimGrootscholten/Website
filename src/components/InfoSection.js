@@ -128,6 +128,12 @@ const Card = styled.div`
       color: black;
       padding: 1rem;
     }
+    svg {
+      width: 3rem;
+    }
+    img {
+      width: 3rem;
+    }
   }
 `;
 export default InfoSection;

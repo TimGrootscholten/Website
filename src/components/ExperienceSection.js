@@ -25,7 +25,7 @@ const ExperienceSection = () => {
         <Toggle title="Javascript">
           <div className="answer">
             <ProgressBar bgcolor={"#fbdc00"} completed={70} />
-            <h5>Projects</h5>
+            <h5>Projecten</h5>
             <Link to="/work/vier-op-een-rij">
               <Button>Vier op een rij</Button>
             </Link>
@@ -34,14 +34,20 @@ const ExperienceSection = () => {
         <Toggle title="PHP">
           <div className="answer">
             <ProgressBar bgcolor={"#7377ad"} completed={35} />
+            <h5>Projecten</h5>
             <Link to="/work/healthone">
               <Button>HealthOne</Button>
+            </Link>
+            <Link to="/work/healthone20">
+              <Button>HealthOne2.0</Button>
             </Link>
           </div>
         </Toggle>
         <Toggle title="Java">
           <div className="answer">
             <ProgressBar bgcolor={"#ea8c11"} completed={35} />
+            <h5>Projecten</h5>
+
             <Link to="/work/platform-game">
               <Button>Platform game</Button>
             </Link>
@@ -50,6 +56,7 @@ const ExperienceSection = () => {
         <Toggle title="React">
           <div className="answer">
             <ProgressBar bgcolor={"#61dafb"} completed={50} />
+            <h5>Projecten</h5>
             <Link to="/work/music-player">
               <Button>Music player</Button>
             </Link>
@@ -61,9 +68,30 @@ const ExperienceSection = () => {
         <Toggle title="Symfony 4">
           <div className="answer">
             <ProgressBar bgcolor={"#000000"} completed={40} />
+            <h5>Projecten</h5>
             <Link to="/work/healthone20">
               <Button>HealthOne2.0</Button>
             </Link>
+          </div>
+        </Toggle>
+        <Toggle title="MySQL">
+          <div className="answer">
+            <ProgressBar bgcolor={"#42759c"} completed={40} />
+            <h5>Projecten</h5>
+            <Link to="/work/healthone20">
+              <Button>HealthOne2.0</Button>
+            </Link>
+            <Link to="/work/healthone">
+              <Button>HealthOne</Button>
+            </Link>
+          </div>
+        </Toggle>
+        <Toggle title="GitHub">
+          <div className="answer">
+            <ProgressBar bgcolor={"#000000"} completed={80} />
+            <h5>GitHub page</h5>
+
+            <GitHub href="https://github.com/TimGrootscholten">GitHub</GitHub>
           </div>
         </Toggle>
       </AnimateSharedLayout>
@@ -99,6 +127,12 @@ const Experience = styled(About)`
   }
 `;
 
+const GitHub = styled.a`
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  border: 3px solid #23d997;
+`;
 const Button = styled.button`
   font-size: 1.2rem;
   margin: 1rem;
