@@ -62,7 +62,6 @@ const Hide = styled.div`
   overflow: hidden;
 `;
 const Social = styled(motion.div)`
-  /* width: 20vw; */
   background-color: #282828;
   border-radius: 1rem;
   padding: 1rem;
