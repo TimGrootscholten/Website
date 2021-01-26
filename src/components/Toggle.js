@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
@@ -9,7 +11,9 @@ const Toggle = ({ children, title }) => {
       className="Experience"
       onClick={() => setToggle(!toggle)}
     >
-      <motion.h4 layout>{title}</motion.h4>
+      <motion.h4 layout>
+        {title} <FontAwesomeIcon icon={toggle ? faArrowUp : faArrowDown} />
+      </motion.h4>
       {toggle ? children : ""}
       <div className="Experience-line"></div>
     </motion.div>

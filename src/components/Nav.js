@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import ik from "../img/ik.png";
+import cv from "../img/TimGrootscholtenCV.pdf";
 
 const Nav = () => {
   const { pathname } = useLocation();
@@ -40,7 +40,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <a href={ik} download>
+          <a href={cv} download>
             Cv als PDF
           </a>
         </li>

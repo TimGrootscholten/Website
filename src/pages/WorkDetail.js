@@ -22,6 +22,7 @@ const WorkDetail = () => {
       {work && (
         <Details
           div
+          style={{ background: "#181818" }}
           exit="exit"
           variants={pageAnimation}
           initial="hidden"

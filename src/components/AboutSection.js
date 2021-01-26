@@ -31,12 +31,7 @@ const AboutSection = () => {
         </Link>
       </Description>
       <Image>
-        <motion.img
-          variants={photoAnim}
-          // src="https://placebeard.it/500x750"
-          src={ik}
-          alt="home img"
-        />
+        <motion.img variants={photoAnim} src={ik} alt="home img" />
       </Image>
       <Wave />
     </About>
